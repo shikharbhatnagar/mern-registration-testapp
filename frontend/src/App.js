@@ -16,7 +16,7 @@ function App() {
 
         try {
             // Send POST request to the backend
-            const response = await axios.post('http://localhost:5000/register', userData);
+            const response = await axios.post('https://mern-registration-testapp-1.onrender.com/register', userData);
             setMessage(response.data.message); // Success message
         } catch (error) {
             if (error.response) {
