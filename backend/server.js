@@ -13,7 +13,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/registration', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb://localhost:27017/registration', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://mongoshikhar:LML36Xq8niD8cyIH@cluster0.sbsiwft.mongodb.net/registration?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Define User Schema
 const UserSchema = new mongoose.Schema({
